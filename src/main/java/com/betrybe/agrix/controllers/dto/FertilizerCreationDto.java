@@ -8,9 +8,9 @@ import com.betrybe.agrix.entities.Fertilizer;
 public record FertilizerCreationDto(String name, String brand, String composition) {
 
   /**
-   * Create a Fertilizer class.
+   * Create a Fertilizer entity.
    *
-   * @return Fertilizer class.
+   * @return Fertilizer entity.
    */
   public Fertilizer toEntity() {
     Fertilizer fertilizer = new Fertilizer();

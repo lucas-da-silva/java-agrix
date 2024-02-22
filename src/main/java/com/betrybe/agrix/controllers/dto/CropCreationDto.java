@@ -10,9 +10,9 @@ public record CropCreationDto(String name, Double plantedArea, LocalDate planted
                               LocalDate harvestDate) {
 
   /**
-   * Create a Crop class.
+   * Create a Crop entity.
    *
-   * @return Crop class.
+   * @return Crop entity.
    */
   public Crop toEntity() {
     Crop crop = new Crop();

@@ -8,9 +8,9 @@ import com.betrybe.agrix.entities.Farm;
 public record FarmCreationDto(String name, Double size) {
 
   /**
-   * Create a Farm class.
+   * Create a Farm entity.
    *
-   * @return Farm class.
+   * @return Farm entity.
    */
   public Farm toEntity() {
     Farm farm = new Farm();
