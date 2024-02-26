@@ -128,7 +128,7 @@
 
   <dependencies>
 
-    <!--    Spring Security-->
+    <!-- Spring Security -->
     <dependency>
       <artifactId>spring-boot-starter-security</artifactId>
       <groupId>org.springframework.boot</groupId>
@@ -137,6 +137,13 @@
       <artifactId>spring-security-test</artifactId>
       <groupId>org.springframework.security</groupId>
       <scope>test</scope>
+    </dependency>
+
+    <!-- JWT -->
+    <dependency>
+      <artifactId>java-jwt</artifactId>
+      <groupId>com.auth0</groupId>
+      <version>4.4.0</version>
     </dependency>
 
     <!-- Spring Data JPA -->
