@@ -5,6 +5,7 @@ import com.betrybe.agrix.entities.Fertilizer;
 import com.betrybe.agrix.services.FertilizerService;
 import java.util.List;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -32,6 +33,7 @@ public class FertilizerController {
     return fertilizerService.save(fertilizer.toEntity());
   }
 
+  @Secured("ADMIN")
   @GetMapping
   public List<Fertilizer> getAllFertilizers() {
     return fertilizerService.findAll();
